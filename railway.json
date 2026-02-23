@@ -4,6 +4,6 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "node src/index.js"
+    "startCommand": "npm install libsodium-wrappers @discordjs/voice@latest"
   }
 }
