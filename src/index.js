@@ -1,7 +1,7 @@
 
 require('dotenv').config();
 const fs=require('fs');
-const {Client,Collection,GatewayIntentBits}=require('discord.js');
+const { Client, Collection, GatewayIntentBits } = require('discord.js');
 const {getQueue}=require('./player');
 
 const client=new Client({intents:[GatewayIntentBits.Guilds,GatewayIntentBits.GuildVoiceStates]});
