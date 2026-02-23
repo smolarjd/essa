@@ -4,6 +4,6 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "npm src/index.js"
+    "startCommand": "node src/index.js"
   }
 }
