@@ -1,0 +1,1 @@
+const{SlashCommandBuilder}=require('discord.js');const{getQueue}=require('../player');module.exports={data:new SlashCommandBuilder().setName('stop').setDescription('stop'),async execute(i){const q=getQueue(i.guild.id);if(!q)return i.reply('Nothing');q.connection.destroy();i.reply('Stopped');}};
